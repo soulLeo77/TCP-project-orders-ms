@@ -1,0 +1,12 @@
+import { IsInt, Min } from "class-validator"
+
+
+export class RequestDto {
+    @IsInt()
+    @Min(1)
+    product_id: number
+
+    @IsInt()
+    @Min(1)
+    quantity: number
+}
